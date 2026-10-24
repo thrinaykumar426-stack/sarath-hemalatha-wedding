@@ -177,3 +177,21 @@ h3{font-family:"Playfair Display",serif;color:#f2d78e}
     font-size: 10px;
   }
 }
+/* Lord Ganesha background watermark */
+.page-1::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image: url("ganesha.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: min(48vw, 450px);
+  opacity: 0.16;
+  pointer-events: none;
+  z-index: 1;
+}
+
+.page-1 .hero-content {
+  position: relative;
+  z-index: 3;
+}
