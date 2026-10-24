@@ -11,7 +11,7 @@ let musicStarted = false;
 // JioSaavn pages cannot be used directly as an <audio src>.
 // Put a legally usable MP3 at assets/music/wedding-song.mp3 to enable
 // direct in-page playback. The Listen to Song button links to JioSaavn.
-audio.src = "assets/music/wedding-song.mp3";
+audio.src = "wedding-song.mp3";
 
 function goTo(pageNumber) {
   const target = Math.max(1, Math.min(5, Number(pageNumber)));
