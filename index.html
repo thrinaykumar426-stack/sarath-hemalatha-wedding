@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#25070b" />
+  <title>Hemalatha & Sarath Babu | Wedding Invitation</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Great+Vibes&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div id="petals" aria-hidden="true"></div>
+  <div class="gold-dust" aria-hidden="true"></div>
+
+  <button id="musicToggle" class="music-toggle" aria-label="Music controls">
+    <span class="music-icon">♫</span><span id="musicText">Music</span>
+  </button>
+
+  <main id="invitation">
+    <!-- PAGE 1 -->
+    <section class="page page-1 active" data-page="1">
+      <div class="mandala"></div>
+      <div class="hero-overlay"></div>
+      <div class="hero-content reveal">
+        <p class="eyebrow">॥ शुभ विवाह ॥</p>
+        <p class="small-caps">With the blessings of our families</p>
+        <h1>Sarath Babu <span>&</span> Hemalatha</h1>
+        <div class="ornament">✦ ❈ ✦</div>
+        <p class="script">are beginning a beautiful new chapter together</p>
+        <p class="date-line">01 • NOVEMBER • 2026</p>
+        <button id="openInvitation" class="gold-button">Open Invitation <span>✦</span></button>
+        <p class="hint">Tap to enter • music begins with your invitation</p>
+      </div>
+    </section>
+
+    <!-- PAGE 2 -->
+    <section class="page page-2" data-page="2">
+      <div class="page-inner">
+        <p class="eyebrow">A Story of Two Hearts</p>
+        <h2>Meet the Couple</h2>
+        <div class="divider">❈</div>
+        <div class="couple-grid">
+          <article class="portrait-card groom-card">
+            <div class="photo-wrap"><img src="assets/images/groom.jpeg" alt="Sarath Babu, the groom"></div>
+            <p class="role">The Groom</p>
+            <h3>Sarath Babu</h3>
+          </article>
+          <div class="between-heart">♥</div>
+          <article class="portrait-card bride-card">
+            <div class="photo-wrap"><img src="assets/images/bride.jpeg" alt="Hemalatha, the bride"></div>
+            <p class="role">The Bride</p>
+            <h3>Hemalatha</h3>
+          </article>
+        </div>
+        <div class="quote-card">
+          <span>“</span>
+          Two hearts, two families, one beautiful journey.
+          <span>”</span>
+        </div>
+        <button class="next-button" data-next="3">Continue <span>→</span></button>
+      </div>
+    </section>
+
+    <!-- PAGE 3 -->
+    <section class="page page-3" data-page="3">
+      <div class="page-inner">
+        <p class="eyebrow">The Celebrations</p>
+        <h2>Moments Before Forever</h2>
+        <div class="divider">✦</div>
+        <div class="timeline">
+          <div class="event">
+            <div class="event-icon">🌼</div>
+            <div><span class="event-label">Haldi</span><h3>October 31, 2026</h3><p>A day of turmeric, laughter, blessings and golden memories.</p></div>
+          </div>
+          <div class="event">
+            <div class="event-icon">💍</div>
+            <div><span class="event-label">Wedding</span><h3>November 01, 2026</h3><p>The sacred day when Sarath Babu & Hemalatha begin forever together.</p></div>
+          </div>
+          <div class="event">
+            <div class="event-icon">🪔</div>
+            <div><span class="event-label">Celebration</span><h3>With Our Families</h3><p>Your presence and blessings will make these moments complete.</p></div>
+          </div>
+        </div>
+        <button class="next-button" data-next="4">Continue <span>→</span></button>
+      </div>
+    </section>
+
+    <!-- PAGE 4 -->
+    <section class="page page-4" data-page="4">
+      <div class="page-inner">
+        <p class="eyebrow">With Love & Blessings</p>
+        <h2>Our Families</h2>
+        <div class="divider">❈</div>
+        <div class="family-layout">
+          <div class="family-card">
+            <span class="family-title">Groom's Parents</span>
+            <h3>Mr. Siva Sankar<br>&amp;<br>Mrs. Lakshmirangamma</h3>
+          </div>
+          <div class="family-photo">
+            <img src="assets/images/couple.jpeg" alt="Sarath Babu and Hemalatha together">
+            <div class="photo-glow"></div>
+          </div>
+          <div class="family-card">
+            <span class="family-title">Bride's Parents</span>
+            <h3>Mr. Anjanappa<br>&amp;<br>Mrs. Lakshmi Devi</h3>
+          </div>
+        </div>
+        <p class="family-note">Together, our families warmly invite you to share in the joy, rituals and blessings of this auspicious occasion.</p>
+        <button class="next-button" data-next="5">View Venue <span>→</span></button>
+      </div>
+    </section>
+
+    <!-- PAGE 5 -->
+    <section class="page page-5" data-page="5">
+      <div class="page-inner venue-page">
+        <p class="eyebrow">Save the Date</p>
+        <h2>Join Us at the Wedding</h2>
+        <div class="divider">✦</div>
+        <div class="venue-card">
+          <div class="venue-info">
+            <p class="venue-kicker">THE WEDDING VENUE</p>
+            <h3>GROOM'S HOMETOWN</h3>
+            <p>P. MATLAGONDI (V),<br>Singanamala (M),<br>Anantapur (D), Andhra Pradesh</p>
+            <p class="venue-date"><strong>November 01, 2026</strong></p>
+            <a class="gold-button map-button" href="https://maps.app.goo.gl/kG9oYZi7dNdrPJk28?g_st=aw" target="_blank" rel="noopener">📍 Open in Google Maps</a>
+          </div>
+          <div class="map-frame">
+            <iframe
+              title="Wedding venue map"
+              loading="lazy"
+              src="https://www.google.com/maps?q=P.%20Matlagondi,%20Singanamala,%20Anantapur,%20Andhra%20Pradesh&output=embed">
+            </iframe>
+            <div class="map-overlay">
+              <span>📍</span>
+              <strong>GROOM'S HOMETOWN</strong>
+            </div>
+          </div>
+        </div>
+
+        <div class="final-message">
+          <img src="assets/images/couple.jpeg" alt="Hemalatha and Sarath Babu">
+          <div>
+            <p class="script">We would be honoured by your presence</p>
+            <h3>Sarath Babu &amp; Hemalatha</h3>
+            <p>With love, gratitude &amp; warmest wishes.</p>
+          </div>
+        </div>
+
+        <div class="actions">
+          <a class="outline-button" href="https://maps.app.goo.gl/kG9oYZi7dNdrPJk28?g_st=aw" target="_blank" rel="noopener">Get Directions ↗</a>
+          <a class="outline-button" href="https://www.jiosaavn.com/song/ranjha-sid-x-kiara-wedding-version/EyMpR0ZbWWw" target="_blank" rel="noopener">♫ Listen to Song</a>
+        </div>
+        <button class="replay-button" id="replay">↻ Replay Invitation</button>
+      </div>
+    </section>
+  </main>
+
+  <div class="page-dots" aria-label="Invitation pages">
+    <button class="dot active" data-page-dot="1"></button>
+    <button class="dot" data-page-dot="2"></button>
+    <button class="dot" data-page-dot="3"></button>
+    <button class="dot" data-page-dot="4"></button>
+    <button class="dot" data-page-dot="5"></button>
+  </div>
+
+  <audio id="weddingAudio" preload="none"></audio>
+
+  <script src="script.js"></script>
+</body>
+</html>
