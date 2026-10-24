@@ -36,14 +36,17 @@ function burstPetals(count = 16) {
 }
 
 function startMusic() {
-  if (musicStarted) return;
-  musicStarted = true;
-  audio.play().then(() => {
-    musicToggle.classList.add("playing");
-    musicText.textContent = "Music On";
-  }).catch(() => {
-    musicText.textContent = "Add MP3";
-  });
+  audio.play()
+    .then(() => {
+      musicStarted = true;
+      musicToggle.classList.add("playing");
+      musicText.textContent = "Music On";
+    })
+    .catch((error) => {
+      musicStarted = false;
+      musicText.textContent = "Music Error";
+      console.error("Music playback failed:", error);
+    });
 }
 
 document.getElementById("openInvitation").addEventListener("click", () => {
