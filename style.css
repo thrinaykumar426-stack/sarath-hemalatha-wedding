@@ -126,3 +126,54 @@ h3{font-family:"Playfair Display",serif;color:#f2d78e}
   .family-photo img{height:280px}
   .venue-info{padding:22px}
 }
+/* Fix spacing and overlapping on the first invitation page */
+.hero-content {
+  position: relative;
+  z-index: 3;
+  width: min(1200px, 92vw);
+  padding: 30px 15px;
+  text-align: center;
+}
+
+.hero-content .eyebrow {
+  margin-bottom: 12px;
+  line-height: 1.5;
+}
+
+.hero-content .small-caps {
+  display: block;
+  margin: 0 0 20px;
+  line-height: 1.8;
+  font-size: 12px;
+}
+
+.hero-content h1 {
+  font-size: clamp(48px, 7vw, 96px);
+  line-height: 1.25;
+  margin: 20px 0 24px;
+  overflow-wrap: normal;
+}
+
+.hero-content .ornament {
+  margin: 16px 0;
+}
+
+.hero-content .script {
+  line-height: 1.5;
+  margin: 12px 0 20px;
+}
+
+.hero-content .date-line {
+  margin: 20px 0 28px;
+}
+
+@media (max-width: 520px) {
+  .hero-content h1 {
+    font-size: 48px;
+    line-height: 1.2;
+  }
+
+  .hero-content .small-caps {
+    font-size: 10px;
+  }
+}
